@@ -8,6 +8,9 @@ from .models import products
 def hello(request):
     return render(request, 'home.html')
 
+def login_view(request):
+    return render(request, 'loginSignup.html')
+
 @csrf_exempt
 def create_product(request):
     if request.method == 'POST':
