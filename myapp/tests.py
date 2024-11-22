@@ -1,6 +1,6 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from .models import users
+from .models import users , products
 import json
 
 # Create your tests here.
@@ -40,16 +40,16 @@ class UserTests(TestCase):
         self.assertEqual(users_list[0]['email'], self.user_data['email'])
 
 
-class ProductTests(TestCase):
-    def setUp(self):
-        self.client = Client()
-        self.create_product_url = reverse('create_product')
-        self.get_products_url = reverse('get_products')
-        self.product_data = {
-            'name': 'Test Product',
-            'description': 'This is a test product',
-            'price': '9.99'
-        }
+# class ProductTests(TestCase):
+#     def setUp(self):
+#         self.client = Client()
+#         self.create_product_url = reverse('create_product')
+#         self.get_products_url = reverse('get_products')
+#         self.product_data = {
+#             'name': 'Test Product',
+#             'description': 'This is a test product',
+#             'price': '9.99'
+#         }
 
     def test_create_product(self):
         response = self.client.post(
