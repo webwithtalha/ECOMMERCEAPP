@@ -8,6 +8,7 @@ urlpatterns = [
 
 
  #<------- CRUD operations for user --------->
+
 path('create_user/', views.create_user, name='create_user'),
 path('get_users/', views.get_users, name='get_users'),
 path('delete_user/<int:user_id>/', views.delete_user, name='delete_user'),
