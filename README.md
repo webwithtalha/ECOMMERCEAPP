@@ -32,4 +32,4 @@ EcommerceApp is a comprehensive solution for managing online retail businesses. 
    ```bash
    npm start
    ```
-2. Open your browser and navigate to `http://localhost:8000`.
+2. Open your browser and navigate to `https://ecommerceapp-3-20qa.onrender.com`.
