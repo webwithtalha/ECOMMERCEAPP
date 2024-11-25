@@ -21,15 +21,11 @@ EcommerceApp is a comprehensive solution for managing online retail businesses. 
    ```bash
    cd EcommerceApp
    ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
 
 ## Usage
 
-1. Start the development server:
+Start the development server:
    ```bash
-   npm start
+   python3 manage.py runserver
    ```
-2. Open your browser and navigate to `https://ecommerceapp-3-20qa.onrender.com`.
+
